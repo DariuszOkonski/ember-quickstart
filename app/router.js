@@ -5,11 +5,3 @@ export default class Router extends EmberRouter {
   location = config.locationType;
   rootURL = config.rootURL;
 }
-
-Router.map(function () {
-  this.route('scientists');
-  this.route('programmers');
-});
-
-// Getting started -> working with html,css and js
-

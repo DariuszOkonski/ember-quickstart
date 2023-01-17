@@ -11,4 +11,5 @@ Router.map(function () {
   this.route('programmers');
 });
 
-// Getting started -> auick start -> Responding to user interactions
+// Getting started -> working with html,css and js
+

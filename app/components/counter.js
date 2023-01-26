@@ -17,7 +17,8 @@ export default class CounterComponent extends Component {
 
   @action
   double() {
-    this.multiple = this.multiple * 2;
+    // this.multiple = this.multiple * 2;
+    this.args.updateMultiple(this.args.multiple * 2);
   }
 
   @action

@@ -11,4 +11,9 @@ export default class DoubleItComponent extends Component {
   double() {
     this.multiple = this.multiple * 2;
   }
+
+  @action
+  updateMultiple(newMultiple) {
+    this.multiple = newMultiple;
+  }
 }

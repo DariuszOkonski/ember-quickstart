@@ -7,11 +7,12 @@ export default class CounterComponent extends Component {
   @tracked
   count = 0;
 
-  @tracked
-  multiple = 1;
+  // @tracked
+  // multiple = 1;
 
   get total() {
-    return this.count * this.multiple;
+    // return this.count * this.multiple;
+    return this.count * this.args.multiple;
   }
 
   @action

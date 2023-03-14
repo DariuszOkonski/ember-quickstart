@@ -1,0 +1,9 @@
+<button data-test-button={{@label}} type='button'>
+  {{#if @ison}}
+    <i data-test-icon aria-hidden='true' class='material-icons'>
+      {{@icon}}
+    </i>
+  {{/if}}
+
+  <span data-test-label>{{@label}}</span>
+</button>

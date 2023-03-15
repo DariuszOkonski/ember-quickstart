@@ -9,18 +9,18 @@ module('Integration | Component | simple-button-test', function (hooks) {
 
   test('should show icon and label', async function (assert) {
     await render(hbs`
-      <SimpleButton
+      <SimpleButton 
         @icon="face"
         @label="Hello world!"
       />
     `);
 
-    assert.strictEqual(
-      this.element.querySelector('.material-cions').textContent().trim(),
-      'face',
-      'The user sees the correct icon.'
-    );
+    assert
+      .dom('[data-test-icon]')
+      .hasText('face', 'The user sees the correct icon');
 
-    
+    assert
+      .dom('[data-test-label]')
+      .hasText('Hello world!', 'The user sees the correct label');
   });
 });

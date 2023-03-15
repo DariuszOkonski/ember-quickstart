@@ -20,5 +20,7 @@ module('Integration | Component | simple-button-test', function (hooks) {
       'face',
       'The user sees the correct icon.'
     );
+
+    
   });
 });

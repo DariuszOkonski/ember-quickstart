@@ -1,4 +1,7 @@
-<h3>Message.hbs</h3>
-<p>result: {{this.getSubstring 'dariusz' 1 4}}</p>
-<h3>Build in helpers</h3>
-<p>concat: {{concat 'one' 'two'}}</p>
+<div>
+  <h3>Username: {{@username}}</h3>
+  <h3>User is active: {{@userIsActive}}</h3>
+  <h3>User local time: {{@userLocalTime}}</h3>
+
+  {{yield}}
+</div>

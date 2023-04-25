@@ -1,2 +1,4 @@
 <hr /><hr />
-<Counter @multiple={{this.multiple}} />
+<Counter @multiple={{this.multiple}} @updateMultiple={{this.updateMultiple}} />
+
+<button type='button' {{on 'click' this.double}}>Double It</button>

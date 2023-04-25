@@ -2,8 +2,7 @@
 <p>x: {{@multiple}}</p>
 <p>Total: {{this.total}}</p>
 
-<button type='button' {{on 'click' this.increment}}>+1</button>
-<button type='button' {{on 'click' this.decrement}}>-1</button>
-<button type='button' {{on 'click' (fn this.change 5)}}>+5</button>
-<button type='button' {{on 'click' (fn this.change -5)}}>-5</button>
+<button type='button' {{on 'click' (fn this.change 1)}}>+1</button>
+<button type='button' {{on 'click' (fn this.change -1)}}>-1</button>
+
 <button type='button' {{on 'click' this.double}}>Double It</button>
